@@ -188,13 +188,14 @@ Vue.component('product', {
         },
     },
     computed: {
-        title() {
+        title2() {
             return this.brand + ' ' + this.product;
+            console.log(123123)
         },
         image() {
             return this.variants[this.selectedVariant].variantImage;
         },
-        inStock() {
+        inStock2() {
             return this.variants[this.selectedVariant].variantQuantity
         },
         shipping() {
@@ -213,7 +214,7 @@ Vue.component('product', {
 })
 
 
-let app = new Vue({
+let app2 = new Vue({
     el: '#app',
     data: {
         premium: true,
